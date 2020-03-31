@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/process', 'TournamentController@process')->name('process-bracket');
+Route::get('/result', 'TournamentController@result')->name('bracket-result');
