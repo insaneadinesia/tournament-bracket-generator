@@ -20,7 +20,6 @@ class CreateTournamentBracketsTable extends Migration
             $table->string('team_a');
             $table->string('team_b');
             $table->text('description');
-            $table->timestamps();
 
             $table->foreign('tournament_id')->references('id')->on('tournaments');
         });
